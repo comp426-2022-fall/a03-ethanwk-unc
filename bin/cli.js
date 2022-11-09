@@ -5,9 +5,9 @@ import minimist from "minimist"
 
 const args = minimist(process.argv.slice(2));
 
-let sides = args.sides;
-let dice = args.dice;
-let rolls = args.rolls;
+let sides = args.sides? args.sides:6 ; //mark optional type
+let dice = args.dice? args.dice:2;
+let rolls = args.rolls? args.rolls:1;
 
 var results = roll(sides, dice, rolls);
 
