@@ -10,9 +10,5 @@ let dice = args.dice;
 let rolls = args.rolls;
 
 var results = roll(sides, dice, rolls);
-let text = results.toString();
 
-console.log("sides: " + sides);
-console.log("dice: " + dice);
-console.log("rolls: " + rolls);
-console.log("results: " + "[" + text + "]");
+console.log(JSON.stringify(results))  
