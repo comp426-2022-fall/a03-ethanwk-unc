@@ -1,3 +1,10 @@
 #!/usr/bin/env node
 
-console.log("EXECUTED")
+import { roll } from "../lib/roll.js"
+import minimist from "minimist"
+
+const args = minimist(process.argv.slice(2));
+
+//console.log(args.sides);
+
+console.log(roll(args.sides));
