@@ -5,6 +5,7 @@ import minimist from "minimist"
 
 const args = minimist(process.argv.slice(2));
 
-//console.log(args.sides);
+var results = roll(args.sides, args.dice, args.rolls);
+let text = results.toString();
 
-console.log(roll(args.sides));
+console.log("results: " + "[" + text + "]");
